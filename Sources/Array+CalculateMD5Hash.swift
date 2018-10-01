@@ -5,6 +5,6 @@ extension Array where Element == String {
         let sortedArray = self.sorted()
         let elementsJoined = String(sortedArray.joined(separator: ","))
 
-        return MD5(elementsJoined)
+        return MD5(elementsJoined!)
     }
 }
